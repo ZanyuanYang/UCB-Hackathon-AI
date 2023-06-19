@@ -1,4 +1,6 @@
 # Logs
+.idea
+.DS_Store
 frontend/.idea
 backend/.env
 backend/.idea
