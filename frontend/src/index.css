@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root{
+    --color-main: #8D5EF3;
+    --color-button: #5B35AC;
+    --color-primary: #005DFF;
+    --color-text-gray: #A1A1AA;
+    --color-text-gray-500: #71717A;
+    --color-text-gray-700: #3F3F46;
+    --color-text-white: #fbfbfb;
+    --color-text-black: #1d1d1f;
+    --color-text-red: #EF4444;
+    --color-text-green: #61B881;
+    --color-background-white: #FFFFFF;
+    --color-background-gray: #39394d;
+    --color-background-infobox: rgba(171, 165, 234, 0.4);
+    --color-background-purple-light: #8489ba;
+    --color-background-purple-dark: #696d94;
+    --color-background: #FAFAFA;
+    --color-border-gray: #E4E4E7;
+    --color-background-bar-gray: #D9D9D9;
+    --color-background-black: #17171e;
+    --pl-navbar: 310px;
+
+    --color-background-box-light: rgb(255, 255, 255);
+    --color-background-dark: rgba(34, 34, 44, 0.97);
+    --color-background-light: rgb(249, 250, 251, 0.97);
+    --color-text-light: #fbfbfb;
+    --color-text-dark: #1d1d1f;
+    --color-text-gary-dark: rgb(160, 174, 192);
+    --color-text-gary-light: rgb(108, 115, 127);
+  }
+}
+
+:root {
+  /* color */
+  --color-main: #8489ba;
+  --color-white: #fbfbfb;
+  --color-black: #1d1d1f;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-small: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Margin Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== Border Radius ==========*/
+  --br-5: 5px;
+  --br-15: 15px;
+  --br-circle: 50%;
+
+  /*========== Transition ==========*/
+  --transition-5: 0.5s;
+  --transition-6: 0.6s;
+  --transition-7: 0.7s;
+
+  --scrollbar-width: calc(100vw - 100%);
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background-color: rgba(34, 34, 44, 0.97);*/
+  /*color: var(--color-white);*/
+  width: calc(100vw - (var(--scrollbar-width, 0px)));
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+}
+
+.container {
+  padding-left: var(--mb-1-5);
+  padding-right: var(--mb-1-5);
+}
+
+.page-100 {
+  min-height: calc(100vh - 10rem);
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: var(--color-white);
+}
+
+.box_shadow_light{
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 22px, rgba(0, 0, 0, 0.03) 0px 0px 0px 0.5px;
+}
+
+.box_shadow_dark{
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 22px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px;
+}
+
+.__sidebar_border {
+  border-right: 2px dashed var(--color-background-purple-dark);
+}
+
+.line-clamp{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.__chat_box{
+  border-radius: 10px 20px 30px 40px/30px;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 568px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* For large devices */
+@media screen and (max-width: 1024px) {
+  .sidebarContainer {
+    display: none;
+  }
+}
+
