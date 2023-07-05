@@ -48,7 +48,7 @@ const create = async (req, res) => {
 const mongodbInsert = async (req, res) => {
   const results = [];
 
-  fs.createReadStream('./nike_products.csv')
+  fs.createReadStream('/Users/briantesun/Desktop/Hackathon redo/backend/controllers/nike_products.csv')
     .pipe(csv())
     .on('data', (data) => results.push(data))
     .on('end', () => {
@@ -90,7 +90,7 @@ const parseCSV = () => {
     const results = [];
     const docs = [];
 
-    fs.createReadStream('./nike_products.csv')
+    fs.createReadStream('/Users/briantesun/Desktop/Hackathon redo/backend/controllers/nike_products.csv')
       .pipe(csv())
       .on('data', (data) => results.push(data))
       .on('end', () => {
@@ -154,7 +154,7 @@ const initModel = async (input) => {
     const chatPrompt = ChatPromptTemplate.fromPromptMessages([
       SystemMessagePromptTemplate.fromTemplate(
         'You are a Nike sales representative. \n' +
-          "Given the pre-determined recommended shoe data, present it to the customer, and explain why the shoe fits the customer's query around 5 sentences."
+          "Given the pre-determined recommended shoe data, present it to the customer, and explain why the shoe fits the customer's query in under 4 sentences."
       ),
       new MessagesPlaceholder('history'),
       HumanMessagePromptTemplate.fromTemplate('{input}'),
