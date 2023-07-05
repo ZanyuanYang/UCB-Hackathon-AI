@@ -115,18 +115,6 @@ function ProductsList() {
                     {product.name}
                   </a>
                 </h3>
-                <p className="text-sm text-gray-500">
-                  {product.productDescription}
-                </p>
-                <p className="flex flex-1 flex-col justify-end">
-                  <p className="text-sm italic text-gray-500">
-                    {/*{product.options}*/}
-                    123
-                  </p>
-                  <p className="text-base font-medium text-gray-900">
-                    {product.productPrice}
-                  </p>
-                </p>
               </div>
             </div>
           ))}

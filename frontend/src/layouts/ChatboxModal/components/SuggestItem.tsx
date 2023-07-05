@@ -23,19 +23,16 @@ export default function SuggestItem(props: SuggestItemProps) {
             sx={{ height: 200 }}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.name}
+            <Typography gutterBottom variant="body1" component="div">
+              {item.metadata.name}
             </Typography>
-            <Typography
+            {/* <Typography
               variant="body2"
               color="text.secondary"
               className="line-clamp"
             >
-              {item.metadata.productDescription}
-            </Typography>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.productPrice}
-            </Typography>
+              {item.metadata.productPrice}
+            </Typography> */}
             {/*<Typography gutterBottom variant="h5" component="div">*/}
             {/*  {item.productLink}*/}
             {/*</Typography>*/}
