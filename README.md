@@ -1,4 +1,4 @@
-# UCB Hackathin AI
+# UCB Hackathon AI
 
 ## Team Name: Yonder Search
 
