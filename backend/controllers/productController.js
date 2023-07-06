@@ -48,7 +48,7 @@ const create = async (req, res) => {
 const mongodbInsert = async (req, res) => {
   const results = [];
 
-  fs.createReadStream('/Users/briantesun/Desktop/Hackathon redo/backend/controllers/nike_products.csv')
+  fs.createReadStream('./nike_products.csv')
     .pipe(csv())
     .on('data', (data) => results.push(data))
     .on('end', () => {
@@ -90,7 +90,7 @@ const parseCSV = () => {
     const results = [];
     const docs = [];
 
-    fs.createReadStream('/Users/briantesun/Desktop/Hackathon redo/backend/controllers/nike_products.csv')
+    fs.createReadStream('./nike_products.csv')
       .pipe(csv())
       .on('data', (data) => results.push(data))
       .on('end', () => {
