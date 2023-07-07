@@ -1,6 +1,5 @@
 Yonder
-
-- YouTube Demo: https://youtu.be/yqj3TAietYE
+Conversational Product Recommendations Designed For E-commerce
 
 ## Techstack
 - Frontend: React, Typescript, Tailwind CSS, Material UI
@@ -45,4 +44,6 @@ In the next couple of months, Google will roll out Bard, which will allow NLP-ba
 ## Images
 ![landing](./resources/home.png)
 ![image](./resources/search1.png)
+
+- YouTube Demo: https://youtu.be/yqj3TAietYE
 
