@@ -1,14 +1,10 @@
-# UCB Hackathon AI
+Yonder
 
-## Team Name: Yonder Search
+- YouTube Demo: https://youtu.be/yqj3TAietYE
 
-- url: https://ai.calhacks.io/
-- Project url: https://devpost.com/software/yonder-search?ref_content=my-projects-tab&ref_feature=my_projects
-- Youtube Demo: https://www.youtube.com/watch?v=PfJhZQgpHm0
-
-## Technologies Used
-- Frontend: React + Typescript + Tailwind CSS + Material UI
-- Backend: Node.js + LangChain + OpenAI + PineCone + Mongodb
+## Techstack
+- Frontend: React, Typescript, Tailwind CSS, Material UI
+- Backend: Node.js, LangChain, OpenAI, PineCone, Mongodb
 
 ## Inspiration
 Think of your most positive shopping experiences. You may think of the time you got help from an associate at Apple's Genius Bar for your next big work purchase or that time the Ritz-Carlton receptionist helped you pick a room with a stunning view. No matter the specifics, great customer service elevates the best brands in the world. Since the inception of e-commerce, companies couldn't recreate that same experience without hiring armies of overseas or domestic employees. With our product, every company will have a nice, knowledgeable, and diligent assistant to help every customer that visits their website find the best product for them!
