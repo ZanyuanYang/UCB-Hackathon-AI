@@ -42,8 +42,9 @@ Deploy our landing page and Nike demo to a public website If Nike or other shoe 
 In the next couple of months, Google will roll out Bard, which will allow NLP-based search for products and services across the web. Over time, large companies like Walmart will have their own NLP-based search solution for their own website. We intend to target vendors that have catalogs of over 10 products that could seriously benefit from NLP-based search but don't have the resources to develop their own solution.
 
 ## Images
-![landing](./resources/home.png)
-![image](./resources/search1.png)
+![home_page](https://github.com/briantesun/Yonder./assets/129823285/93e31a82-bdb3-4707-aa82-25e72b28eefb)
+![product_page](https://github.com/briantesun/Yonder./assets/129823285/8eac3d36-f964-4181-978b-2b8cd7b8e600)
+![scenario_one](https://github.com/briantesun/Yonder./assets/129823285/b15fd2fb-4ae7-4eb1-8e36-ca0c0c8a1d07)
 
 - YouTube Demo: https://youtu.be/yqj3TAietYE
 
