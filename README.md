@@ -41,6 +41,25 @@ Deploy our landing page and Nike demo to a public website If Nike or other shoe 
 
 In the next couple of months, Google will roll out Bard, which will allow NLP-based search for products and services across the web. Over time, large companies like Walmart will have their own NLP-based search solution for their own website. We intend to target vendors that have catalogs of over 10 products that could seriously benefit from NLP-based search but don't have the resources to develop their own solution.
 
+## Local Development
+1. Make a clone of the repository
+2. Make a `.env` file at the root of the backend folder with the following variables:
+```
+MONGO_URL=
+PINECONE_ENVIRONMENT=
+PINECONE_API_KEY=
+OPENAI_API_KEY=
+```
+* Create a Pinecone index with 1536 dimensions and the cosine metric to match the OpenAI embeddings
+4. Run the following commands in both the frontend and backend subdirectories
+```bash
+npm install
+npm run dev
+```
+3. Navigate to backend/controllers. Copy the filepath to "nikeproducts.csv" and change change every ocurrence of "./nike_products.csv" in backend/controllers/productController.js to the filepath you copied.
+4. Make the following POST requests in Postman: "http://localhost:8080/api/product/mongodb/insert", "http://localhost:8080/api/product/pinecone/insert"
+5. Ready to go!
+
 ## Images
 ![home_page](https://github.com/briantesun/Yonder./assets/129823285/93e31a82-bdb3-4707-aa82-25e72b28eefb)
 ![product_page](https://github.com/briantesun/Yonder./assets/129823285/8eac3d36-f964-4181-978b-2b8cd7b8e600)
