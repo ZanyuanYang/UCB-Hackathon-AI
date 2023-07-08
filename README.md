@@ -58,7 +58,7 @@ npm run dev
 ```
 3. Navigate to backend/controllers. Copy the filepath to "nikeproducts.csv" and change change every ocurrence of "./nike_products.csv" in backend/controllers/productController.js to the filepath you copied.
 4. Make the following POST requests in Postman: "http://localhost:8080/api/product/mongodb/insert", "http://localhost:8080/api/product/pinecone/insert"
-5. Ready to go!
+5. All set!
 
 ## Images
 ![home_page](https://github.com/briantesun/Yonder./assets/129823285/93e31a82-bdb3-4707-aa82-25e72b28eefb)
