@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { ChevronRightIcon } from '@heroicons/react/20/solid';
-import img1 from '../../../assets/img1.png';
 import { Link } from 'react-router-dom';
 import ChatboxModal from '../../../layouts/ChatboxModal';
-import hero from "../../../assets/hero.png";
+import hero from "../../../assets/hero.png"
+
 
 function Hero() {
   const [chatboxModalOpen, setChatboxModalOpen] = useState(false);
