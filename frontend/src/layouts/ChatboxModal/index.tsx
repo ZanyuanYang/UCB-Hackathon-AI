@@ -11,6 +11,7 @@ import SuggestItem from './components/SuggestItem';
 import UseAnimations from 'react-useanimations';
 import loading from 'react-useanimations/lib/loading';
 import logo from '../../assets/logo.jpg';
+import { BASE_URL } from '../../utils/constant';
 
 type Props = {
   open: boolean;
@@ -72,11 +73,12 @@ function ChatboxModal(props: Props) {
     };
 
     const response = await axios.post(
-      'http://localhost:8080/api/product/pinecone',
+      `${BASE_URL}/product/pinecone`,
       {
         input: userMessage,
       }
     );
+    
 
     setMessages([
       ...chatMessages,
