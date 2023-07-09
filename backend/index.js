@@ -53,6 +53,3 @@ const start = async () => {
 };
 
 start();
-
-// Export the app instance for use in other modules
-export default app;
