@@ -13,9 +13,9 @@ import {
 const router = express.Router();
 
 router.route('/product').get(getAll).post(create);
-router.route('/product/:_id').get(getOne).put(update).delete(remove);
 router.route('/product/pinecone').post(pineconeQuery);
 router.route('/product/pinecone/insert').post(pineconeInsert);
 router.route('/product/mongodb/insert').post(mongodbInsert);
+router.route('/product/:_id').get(getOne).put(update).delete(remove);
 
 export { router as productRouter };
