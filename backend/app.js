@@ -21,9 +21,10 @@ app.use(ResponseMiddleware);
 app.use('/api', productRouter);
 
 // when no page is found
-app.get('/api/*', async (req, res) => {
-  throw new NotFoundError();
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
 });
+
 
 app.use(errorHandler);
 
