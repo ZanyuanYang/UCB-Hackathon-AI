@@ -3,7 +3,7 @@ const team = [
     name: 'Zanyuan Yang',
     role: 'Software Engineer',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4E35AQGshc8VHhg9fQ/profile-framedphoto-shrink_200_200/0/1663098204432?e=1689112800&v=beta&t=61BpSCRN7CgxQ580MQOPupUK5umeG_uf8upf0DheZWY',
+      'https://lh3.googleusercontent.com/a/AAcHTtdaSOeib92mWgAnBnej9K4VGeIDwXWyMrwl0PWaTw=s96-c?height=180&width=180',
     linkedin: 'https://www.linkedin.com/in/zanyuan-yang-277562129/',
   },
   {
@@ -24,7 +24,7 @@ const team = [
     name: 'Sai Gopinath',
     role: 'Software Engineer',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4E35AQEoRLplgF8UGw/profile-framedphoto-shrink_200_200/0/1672530461151?e=1689112800&v=beta&t=xBsEe59c9nLCIjRTBBn-bqqib_q_uJ016rI55V5Rqcc',
+      'https://media.licdn.com/dms/image/D4E03AQE7X946JNujJw/profile-displayphoto-shrink_800_800/0/1672530460322?e=2147483647&v=beta&t=oxlM6yMr1K6eesroW1YJXE3qeieQOmcHlTjuzWi4IHk',
     linkedin: 'https://www.linkedin.com/in/sai-gopinath-3a1931170/',
   },
 ];
