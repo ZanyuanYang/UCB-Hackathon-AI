@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://yonder-backend.vercel.app/api';
+export const BASE_URL = 'https://salesapi-1-g9491853.deta.app/chat/answer';
