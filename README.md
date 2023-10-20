@@ -1,6 +1,13 @@
 # Yonder
 Conversational Product Recommendations Designed For E-commerce
 
+Website: https://yonder.vercel.app/
+
+Devpost: https://devpost.com/software/yonder-search
+
+Youtube Demo: https://www.youtube.com/watch?v=PfJhZQgpHm0
+
+
 ## Techstack
 - Frontend: React, Typescript, Tailwind CSS, Material UI
 - Backend: Node.js, LangChain, OpenAI, PineCone, Mongodb
