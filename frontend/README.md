@@ -1,34 +1,14 @@
-# UCB Hackathin AI
+# Yonder
+Conversational Product Recommendations Designed For E-commerce
 
-## Team Name: Yonder Search
+## Techstack
+React, Typescript, Tailwind CSS, Material UI
 
-- github: 
-- url: https://ai.calhacks.io/
-- Project url: https://devpost.com/software/yonder-search?ref_content=my-projects-tab&ref_feature=my_projects
-- Youtube Demo: https://www.youtube.com/watch?v=PfJhZQgpHm0
+## How to run
 
-## Technologies Used
-React + Typescript + Tailwind CSS + Material UI
-
-## Getting Started
-
-First, run the development server:
+Make a clone of the repository and run the following commmands:
 
 ```bash
 npm install
 npm run dev
-http://localhost:5173/
 ```
-
-## Package
-
-- React
-- [Vite](https://vitejs.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [ESLint](https://eslint.org/)
-  - [Airbnb style](https://github.com/airbnb/javascript)
-- [Prettier](https://prettier.io/)
-- [Material UI](https://material-ui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Styled Components](https://styled-components.com/)
-

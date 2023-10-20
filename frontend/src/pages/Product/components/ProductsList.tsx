@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { BASE_URL } from '../../../utils/constant';
 
 const products = [
   {
@@ -82,7 +83,7 @@ function ProductsList() {
   const [productList, setProductList] = useState<any[]>(products);
 
   const getProducts = async () => {
-    const response = await axios.get('http://localhost:8080/api/product');
+    const response = await axios.get(`${BASE_URL}/product`);
     console.log(response.data.data.data);
     setProductList(response.data.data.data);
   };
@@ -115,18 +116,6 @@ function ProductsList() {
                     {product.name}
                   </a>
                 </h3>
-                <p className="text-sm text-gray-500">
-                  {product.productDescription}
-                </p>
-                <p className="flex flex-1 flex-col justify-end">
-                  <p className="text-sm italic text-gray-500">
-                    {/*{product.options}*/}
-                    123
-                  </p>
-                  <p className="text-base font-medium text-gray-900">
-                    {product.productPrice}
-                  </p>
-                </p>
               </div>
             </div>
           ))}

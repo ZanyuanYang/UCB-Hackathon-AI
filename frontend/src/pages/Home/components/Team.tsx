@@ -1,30 +1,30 @@
 const team = [
   {
     name: 'Zanyuan Yang',
-    role: 'Full Stack Developer',
+    role: 'Software Engineer',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4E35AQGshc8VHhg9fQ/profile-framedphoto-shrink_400_400/0/1663098204432?e=1687726800&v=beta&t=Va2KEXMUj1jLDRqQqsabxFUzzeSW_k3vriVt0hfOPe0',
+      'https://lh3.googleusercontent.com/a/AAcHTtdaSOeib92mWgAnBnej9K4VGeIDwXWyMrwl0PWaTw=s96-c?height=180&width=180',
     linkedin: 'https://www.linkedin.com/in/zanyuan-yang-277562129/',
   },
   {
     name: 'Briante Sun',
-    role: 'Sofeware Developer',
+    role: 'Software Engineer',
     imageUrl:
       'https://media.licdn.com/dms/image/D4D03AQGHYB-2IoruDw/profile-displayphoto-shrink_800_800/0/1680588237611?e=1692835200&v=beta&t=E8nrp-hDTGBSWzAw-XutS_utQguyGmRZcCTm1_b2h7s',
     linkedin: 'https://www.linkedin.com/in/briantesun/',
   },
   {
     name: 'Colin Steidtmann',
-    role: 'Sofeware Developer',
+    role: 'Software Engineer',
     imageUrl:
       'https://media.licdn.com/dms/image/C5603AQHtSo5AYp2sDQ/profile-displayphoto-shrink_400_400/0/1629667896917?e=1692835200&v=beta&t=QPyPcWY31Rps2ETjj-fzOC5F_vimo0bn6p-BUmAjjbc',
     linkedin: 'https://www.linkedin.com/in/colinsteidtmann/',
   },
   {
     name: 'Sai Gopinath',
-    role: 'Sofeware Developer',
+    role: 'Software Engineer',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4E35AQEoRLplgF8UGw/profile-framedphoto-shrink_400_400/0/1672530461151?e=1687726800&v=beta&t=w-kFn0AmpRVqNPlH5wJNP9fkFQzKYyvGPYv0CH2ujCM',
+      'https://media.licdn.com/dms/image/D4E03AQE7X946JNujJw/profile-displayphoto-shrink_800_800/0/1672530460322?e=2147483647&v=beta&t=oxlM6yMr1K6eesroW1YJXE3qeieQOmcHlTjuzWi4IHk',
     linkedin: 'https://www.linkedin.com/in/sai-gopinath-3a1931170/',
   },
 ];
@@ -34,7 +34,7 @@ function Team() {
     <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Our team
+          Our Team
         </h2>
       </div>
       <ul

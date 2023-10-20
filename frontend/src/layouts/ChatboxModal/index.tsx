@@ -11,6 +11,7 @@ import SuggestItem from './components/SuggestItem';
 import UseAnimations from 'react-useanimations';
 import loading from 'react-useanimations/lib/loading';
 import logo from '../../assets/logo.jpg';
+import { BASE_URL } from '../../utils/constant';
 
 type Props = {
   open: boolean;
@@ -23,7 +24,7 @@ function ChatboxModal(props: Props) {
   const [messages, setMessages] = useState<any[]>([
     {
       message:
-        "👋Hello, I'll be your personal assistant for your visit today! What are you looking for?",
+        "👋 Hello, What are you looking for?",
       sentTime: 'just now',
       sender: 'ChatGPT',
       suggestion: null,
@@ -72,11 +73,12 @@ function ChatboxModal(props: Props) {
     };
 
     const response = await axios.post(
-      'http://localhost:8080/api/product/pinecone',
+      `${BASE_URL}/product/pinecone`,
       {
         input: userMessage,
       }
     );
+    
 
     setMessages([
       ...chatMessages,
@@ -145,27 +147,9 @@ function ChatboxModal(props: Props) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full flex flex-col gap-2 max-w-screen-lg transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all bg-slate-50">
-                <Dialog.Title
-                  as="h3"
-                  className="mb-2 font-bold text-lg text-gray-900 flex items-center gap-2"
-                >
-                  <img className="w-10 rounded-full" src={logo} alt="logo" />
-                  Yonder Search
-                </Dialog.Title>
-                {/*<div className="mt-2 flex flex-col gap-1 border border-gray-200 bg-gray-100 rounded-xl p-2">*/}
-                {/*  <h2 className="text-gray-800">AI Notes</h2>*/}
-                {/*  <p className="text-xs max-w-md space-y-1 text-gray-500 list-inside break-all">*/}
-                {/*    1. What is the best way to find a*/}
-                {/*    job?fnekjwafnewkafnewjnfewjaf ewkjaf*/}
-                {/*  </p>*/}
-                {/*  <p className="text-xs max-w-md space-y-1 text-gray-500 list-inside break-all">*/}
-                {/*    2. What is the best way to find a*/}
-                {/*    job?fnekjwafnewkafnewjnfewjaf ewkjaf*/}
-                {/*  </p>*/}
-                {/*</div>*/}
+              <Dialog.Panel className="w-full flex flex-col gap-2 max-w-screen-xl transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all bg-slate-50">
 
-                <div className="border border-slate-400 rounded-2xl h-[30em] overflow-auto p-4">
+                <div className="border border-slate-400 rounded-2xl h-[40em] overflow-auto p-4">
                   <div>
                     {messages.map((message) => {
                       return (
@@ -175,12 +159,12 @@ function ChatboxModal(props: Props) {
                             <div className="flex gap-2">
                               <img
                                 className="rounded-full w-12 h-12"
-                                src="https://static.vecteezy.com/system/resources/previews/010/994/232/original/nike-logo-black-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg"
+                                src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/nike-512.png"
                                 alt="bot"
                               />
                               <div>
                                 <p className="text-gray-900 font-semibold tracking-wide">
-                                  Nike assistant
+                                  James from Nike
                                 </p>
                                 <div className="__chat_box bg-white p-3 inline-block">
                                   {message.message}
@@ -217,7 +201,7 @@ function ChatboxModal(props: Props) {
                   {isTyping && (
                     <div className="text-black mt-2 flex gap-2">
                       <UseAnimations animation={loading} />
-                      <div>Thinking...</div>
+                      <div>Looking through our catalog!</div>
                     </div>
                   )}
                   <div ref={messagesEndRef} />
@@ -250,7 +234,7 @@ function ChatboxModal(props: Props) {
                       type="text"
                       id="simple-search"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      placeholder="Chat here..."
+                      placeholder="Send a message"
                       value={userMessage}
                       autoComplete="off"
                       required
@@ -277,10 +261,6 @@ function ChatboxModal(props: Props) {
                     </button>
                   )}
                 </form>
-                <h3 className="flex ml-auto text-sm text-gray-500">
-                  Power by &nbsp;
-                  <p className="font-medium text-gray-700">Hackathon AI</p>
-                </h3>
               </Dialog.Panel>
             </Transition.Child>
           </div>

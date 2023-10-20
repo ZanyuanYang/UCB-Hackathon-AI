@@ -1,27 +1,22 @@
-# UCB Hackathin AI
+# Yonder
+Conversational Product Recommendations Designed For E-commerce
 
-## Team Name: Yonder Search
+## Techstack
+Node.js, LangChain, OpenAI, PineCone, Mongodb
 
-- github:
-- url: https://ai.calhacks.io/
-- Project url: https://devpost.com/software/yonder-search?ref_content=my-projects-tab&ref_feature=my_projects
-- Youtube Demo: https://www.youtube.com/watch?v=PfJhZQgpHm0
+## How to run
 
-## Technologies Used
-Backend: Node.js + LangChain + OpenAI + PineCone + Mongodb
+Make a clone of the repository and run the following commmands:
 
-## Getting Started
+```bash
+npm install
+npm run dev
+```
 
-create a `.env` file with the following variables:
+Make sure to create a `.env` file with the following variables:
 ```json
 MONGO_URL=###
 PINECONE_ENVIRONMENT=###
 PINECONE_API_KEY=###
 OPENAI_API_KEY=###
-```
-
-First, run the development server:
-```bash
-npm install
-npm run dev
 ```
